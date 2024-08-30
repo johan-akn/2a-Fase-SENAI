@@ -3,7 +3,7 @@ import'./Cabecalho.css'
 function Cabecalho() {
   return (
     <div className="Cabecalho-container">
-      <h1>Treinar camarão</h1>
+      <h1>Treinar dragão</h1>
     </div>
   )
 }

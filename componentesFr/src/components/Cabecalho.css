@@ -1,3 +1,4 @@
 .Cabecalho-container{
-    background-color: rgb(127, 197, 255);
+    background-color: var(--cor-4);
+    color: var(--cor-5);
 }
