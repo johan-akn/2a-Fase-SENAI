@@ -1,0 +1,12 @@
+.Contador-Container{
+    background-color: rgb(212, 196, 175);
+    border: 2px solid;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.Contador-Container button{
+    
+    margin: 10px;
+}
