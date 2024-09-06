@@ -40,7 +40,7 @@ function Garcom() {
       setResultado ("Seu empréstimo foi aprovado!")
     }
     else if(calcSalario <= valorPrestacao){
-      setResultado ("Seu empréstimo foi reprovado. O valor do empréstimo é maior que 30% do salário.")
+      setResultado ("Seu empréstimo foi reprovado. O valor da prestação é maior que 30% do salário.")
     }
 
     
