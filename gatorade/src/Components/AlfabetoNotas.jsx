@@ -45,7 +45,7 @@ function AlfabetoNotas() {
     }
 
   return (
-    <div className='NotasContainer'>
+    <div className='Container'>
         <h2>Notas com letras</h2>
         <button onClick={CalcNotas}>Descobrir qual sua letra :o</button>
 

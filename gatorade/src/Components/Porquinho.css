@@ -1,4 +1,4 @@
-.StarContainer{
+.PorquinhoContainer{
     background-color: rgb(212, 196, 175);
     border: 2px solid;
     padding: 25px;
@@ -7,7 +7,7 @@
 
 }
 
-.StarContainer button{
+.PorquinhoContainer button{
 
     margin-bottom: 10px;
     

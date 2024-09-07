@@ -29,7 +29,7 @@ function Venda() {
     }
 
   return (
-    <div className='Container'>
+    <div className='VendaContainer'>
         <h2>Venda</h2>
         <button onClick={BotaoVenda}>Calcular valor de venda</button>
         

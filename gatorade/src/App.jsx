@@ -8,6 +8,7 @@ import Garcom from "./Components/Garcom"
 import StarUber from "./Components/StarUber"
 import Venda from "./Components/Venda"
 import AlfabetoNotas from "./Components/AlfabetoNotas"
+import Porquinho from "./Components/Porquinho"
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
       <StarUber />
       <Venda />
       <AlfabetoNotas />
+      <Porquinho />
     </>
 
   )
