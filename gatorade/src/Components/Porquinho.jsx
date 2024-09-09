@@ -17,13 +17,7 @@ function Porquinho() {
         let cincoCentavos = Number(prompt('Quantas moedas de 5 centavos?'))
 
         //Cálculos
-        umReal = umReal * 100
-        cinquentaCentavos = cinquentaCentavos * 50
-        vinteCincoCentavos = vinteCincoCentavos * 25
-        dezCentavos = dezCentavos * 10
-        cincoCentavos = cincoCentavos * 5
-
-        totalReais = (umReal + cinquentaCentavos + vinteCincoCentavos + dezCentavos + cincoCentavos) / 100
+        totalReais = ((umReal * 100) + (cinquentaCentavos * 50) + (vinteCincoCentavos * 25) + (dezCentavos * 10) + (cincoCentavos * 5)) / 100
         valorTroco = totalReais - valorProduto
 
         //Saída de dados
