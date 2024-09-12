@@ -32,7 +32,7 @@ function Porquinho() {
     }
   return (
     <div className='PorquinhoContainer'>
-        <h2>Porquinho 🐖</h2>
+        <h2>🐖</h2>
         <button onClick={ContarMoedas}>Contar moedas</button>
 
         <div>
