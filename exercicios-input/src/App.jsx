@@ -7,6 +7,8 @@ import NumPar from './pages/NumPar'
 import Calculadora from './pages/Calculadora'
 import Senha from './pages/Senha'
 import Notas from './pages/Notas'
+import Maior from './pages/Maior'
+import Segredo from './pages/Segredo'
 
 function App() {
   
@@ -22,6 +24,8 @@ function App() {
       <button onClick={() => {setPagina(<Calculadora />)}}>Calculadora</button>
       <button onClick={() => {setPagina(<Senha />)}}>Senha</button>
       <button onClick={() => {setPagina(<Notas />)}}>Notas</button>
+      <button onClick={() => {setPagina(<Maior />)}}>Maior número</button>
+      <button onClick={() => {setPagina(<Segredo />)}}>Segredo</button>
 
     </nav>
     {pagina}

@@ -38,7 +38,7 @@ function Notas() {
     <div>
       <h2>Classificação de Notas</h2>
 
-      <input type="number"
+      <input type="number" className='inpt-notas'
          placeholder='Digite sua nota (0 a 100)'
         value={inptNota}
         onChange={ (event) => {setInptNota(event.target.value)}}

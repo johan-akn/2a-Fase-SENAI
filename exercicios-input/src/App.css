@@ -53,3 +53,8 @@
   margin: 10px;
 }
 
+input{ 
+  text-align: center;
+  outline: none;
+}
+
