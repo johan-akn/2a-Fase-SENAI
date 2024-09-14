@@ -31,7 +31,7 @@ function NumSecreto() {
       />
 
         <div>
-          <button onClick={() => {setRandomNum = (Math.floor(Math.random() * 2) + 1)}}>Gerar Número</button>
+          <button onClick={() => {setRandomNum (Math.floor(Math.random() * 10) + 1)}}>Gerar Número</button>
         </div>
         
       <div>

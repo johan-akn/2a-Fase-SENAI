@@ -3,6 +3,10 @@ import './App.css'
 import Home from './pages/Home'
 import NumSecreto from './pages/NumSecreto'
 import Semana from './pages/Semana'
+import NumPar from './pages/NumPar'
+import Calculadora from './pages/Calculadora'
+import Senha from './pages/Senha'
+import Notas from './pages/Notas'
 
 function App() {
   
@@ -14,6 +18,10 @@ function App() {
       <button onClick={() => {setPagina(<Home />)}}>Home</button>
       <button onClick={() => {setPagina(<NumSecreto />)}}>Número Secreto</button>
       <button onClick={() => {setPagina(<Semana />)}}>Dias da Semana</button>
+      <button onClick={() => {setPagina(<NumPar />)}}>Número Par</button>
+      <button onClick={() => {setPagina(<Calculadora />)}}>Calculadora</button>
+      <button onClick={() => {setPagina(<Senha />)}}>Senha</button>
+      <button onClick={() => {setPagina(<Notas />)}}>Notas</button>
 
     </nav>
     {pagina}
