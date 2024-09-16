@@ -9,6 +9,7 @@ import Senha from './pages/Senha'
 import Notas from './pages/Notas'
 import Maior from './pages/Maior'
 import Segredo from './pages/Segredo'
+import Carrinho from './pages/Carrinho'
 
 function App() {
   
@@ -26,6 +27,8 @@ function App() {
       <button onClick={() => {setPagina(<Notas />)}}>Notas</button>
       <button onClick={() => {setPagina(<Maior />)}}>Maior número</button>
       <button onClick={() => {setPagina(<Segredo />)}}>Segredo</button>
+      <button onClick={() => {setPagina(<Carrinho />)}}>Carrinho</button>
+
 
     </nav>
     {pagina}

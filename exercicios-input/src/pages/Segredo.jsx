@@ -17,7 +17,7 @@ function Segredo() {
   return (
     <div>
       <h2>Mensagem secreta</h2>
-      <p>Digite a senha e descubra a mensagem secreta (⌐■_■)</p>
+      <p>Digite a senha e descubra a mensagem secreta</p>
 
       <input type="text"
          value={inptSenha}
