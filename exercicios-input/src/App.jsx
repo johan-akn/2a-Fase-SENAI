@@ -10,6 +10,7 @@ import Notas from './pages/Notas'
 import Maior from './pages/Maior'
 import Segredo from './pages/Segredo'
 import Carrinho from './pages/Carrinho'
+import Cachorro from './pages/Cachorro'
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
       <button onClick={() => {setPagina(<Maior />)}}>Maior número</button>
       <button onClick={() => {setPagina(<Segredo />)}}>Segredo</button>
       <button onClick={() => {setPagina(<Carrinho />)}}>Carrinho</button>
+      <button onClick={() => {setPagina(<Cachorro />)}}>Cachorro</button>
 
 
     </nav>
