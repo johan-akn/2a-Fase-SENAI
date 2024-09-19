@@ -25,7 +25,10 @@ function Cachorro() {
     }
   return (
     <div>
-      Idade do cachorro:
+      <div>
+      <p> Idade do cachorro: </p> 
+      </div>
+        
       <input type="number" className='container-input'
       value={inptIdade}
       onChange={ (event) => {setInptIdade(event.target.value)}}

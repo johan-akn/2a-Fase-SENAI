@@ -10,6 +10,7 @@ function Render() {
     const[adm, setAdm] = useState(true)
     const[idade, setIdade] = useState(0)
     const[usuario, setUsuario] = useState(false)
+    const [podeAposentar, setPodeAposentar] = useState(false)
 
   return (
     <div>

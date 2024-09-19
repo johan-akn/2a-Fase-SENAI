@@ -1,0 +1,14 @@
+.inptDias{
+    margin: 15px;
+}
+
+.inptDias { 
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+button{
+    margin: 10px;
+}
