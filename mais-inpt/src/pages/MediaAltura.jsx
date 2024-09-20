@@ -10,53 +10,58 @@ function MediaAltura() {
     const [contMasc, setContMasc] = useState(0)
     const [contFem, setContFem] = useState(0)
     const [stateRelatorio, setStateRelatorio] = useState()
+    const [somaMasc, setSomaMasc] = useState(0)
+    const [somaFem, setSomaFem] = useState(0)
+    const [maiorAltura, setMaiorAltura] = useState(0)
+    const [menorAltura, setMenorAltura] = useState(0)
 
-    let alturaMasc, alturaFem, mediaAlturaMasc, mediaAlturaFem
-    let maiorAltura, menorAltura
-    let mediaFem, mediaPop, infoMasc
+
+
+    let mediaAlturaMasc, mediaAlturaFem
+    let mediaPop, infoMasc
     
     function AddDados(){
-        if(inptGenero == 0 && cont < 10){
-            if(inptAltura > maiorAltura){
-                maiorAltura = `${inptAltura}m`
-            }
-            if(inptAltura < menorAltura){
-                menorAltura = `${inptAltura}m`
-            }
+        //Verifica maior altura
+        if(inptAltura > maiorAltura){
+            setMaiorAltura(inptAltura)
+        }
+        
+        //Verifica menor altura
+        if(inptAltura < menorAltura){
+            setMenorAltura(inptAltura)
+        }
 
-            alturaMasc += Number(inptAltura)
-
+        //Insere dados masc
+        if(inptGenero == 0 && cont < 10){         
             setCont(cont + 1)
             setContMasc(contMasc + 1)
+            setSomaMasc (somaMasc + Number(inptAltura))
 
         }
-        else if(inptGenero == 1 && cont < 10){
-            if(inptAltura > maiorAltura){
-                maiorAltura = `${inptAltura}m`
-            }
-            if(inptAltura < menorAltura){
-                menorAltura = `${inptAltura}m`
-            }
-
-            alturaFem += Number(inptAltura)
-
+        //Insere dados fem
+        else if(inptGenero == 1 && cont < 10){ 
             setCont(cont + 1)
             setContFem(contFem + 1)
+            setSomaFem(somaFem + Number(inptAltura))
         }
-         if(cont >= 10){
+
+         if(cont == 10){
+
+            mediaAlturaFem = somaFem / contFem
+            mediaAlturaMasc = somaMasc / contMasc
+            mediaPop = (somaFem + somaMasc) / cont
+            infoMasc = contMasc / cont * 100
 
             let infosRelatorio = {
                 maior: maiorAltura,
                 menor: menorAltura,
-                mediaFem: mediaFem,
+                mediaFem: mediaAlturaFem,
                 mediaPop: mediaPop,
-                // infoMasc: infoMasc
+                infoMasc: infoMasc
             }
             setStateRelatorio(infosRelatorio)
         }
-        mediaAlturaFem = alturaFem / contFem
-        mediaAlturaMasc = alturaMasc / contMasc
-        mediaPop = (alturaFem + alturaMasc) / cont
+
     }
   return (
     <div>
@@ -85,10 +90,7 @@ function MediaAltura() {
 
        {stateRelatorio && 
             <RelatorioAltura infos={ stateRelatorio } />}
-            {/* FALTA % DOS HOMENS */}
-       {/* {cont}
-       {contMasc}
-       {contFem} */}
+
     </div>
   )
 }
