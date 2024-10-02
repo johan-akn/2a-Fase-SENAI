@@ -1,0 +1,25 @@
+.ddd-button{
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lista-ddd{
+    height: 14em;
+}
+
+.input-ddd{
+    border-radius: 6px;
+    border: none;
+}
+
+
+.resultado-ddd{
+    margin-top: 1em;
+}
+
+.ddd-container p,
+.resultado-ddd{
+    font-size: 18px;
+}

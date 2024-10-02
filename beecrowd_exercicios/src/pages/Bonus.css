@@ -1,0 +1,12 @@
+.bonus-container input{
+    border: none;
+    border-radius: 6px;
+}
+
+.calc-bonus{
+    margin-top: 15px;
+}
+
+.resultado-bonus{
+    margin-top: 12px;
+}

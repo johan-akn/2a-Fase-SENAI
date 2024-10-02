@@ -1,0 +1,25 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #13678A;
+  color: #9AEBA3;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  /* padding: 1.2em; */
+  /* padding: 7px; */
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #DAFDBA;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #5fce6c;
+}

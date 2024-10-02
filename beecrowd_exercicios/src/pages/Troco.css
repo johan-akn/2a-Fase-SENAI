@@ -1,0 +1,12 @@
+.container-troco input{
+    border: none;
+    border-radius: 6px;
+}
+
+.botaoCalc{
+    margin-top: 10px;
+}
+
+.resultado-troco{
+    margin-top: 13px;
+}

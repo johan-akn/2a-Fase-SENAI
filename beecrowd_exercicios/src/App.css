@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.nav{
+  height: 80px;
+}
+.nav button{
+  margin-left: 20px;
+  padding: 7px;
+}
+
+.body{
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
