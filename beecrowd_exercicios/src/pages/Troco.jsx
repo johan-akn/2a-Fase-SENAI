@@ -81,31 +81,31 @@ function Troco() {
 
       <div className="resultado-troco">
         <div classname='resultado'>
-          {qtd100 > 0 && `${qtd100} notas de R$100.`}
+          {qtd100 > 0 && `${qtd100} nota(s) de R$100.`}
         </div>
 
         <div classname='resultado'>
-          {qtd50 > 0 && `${qtd50} notas de R$50.`}
+          {qtd50 > 0 && `${qtd50} nota(s) de R$50.`}
         </div>
 
         <div classname='resultado'>
-          {qtd20 > 0 && `${qtd20} notas de R$20.`}
+          {qtd20 > 0 && `${qtd20} nota(s) de R$20.`}
         </div>
 
         <div classname='resultado'>
-          {qtd10 > 0 && `${qtd10} notas de R$10.`}
+          {qtd10 > 0 && `${qtd10} nota(s) de R$10.`}
         </div>
 
         <div classname='resultado'>
-          {qtd50 > 0 && `${qtd5} notas de R$5.`}
+          {qtd50 > 0 && `${qtd5} nota(s) de R$5.`}
         </div>
 
         <div classname='resultado'>
-          {qtd2 > 0 && `${qtd2} notas de R$2.`}
+          {qtd2 > 0 && `${qtd2} nota(s) de R$2.`}
         </div>
 
         <div classname='resultado'>
-          {qtd1 > 0 && `${qtd1} moedas de R$1.`}  
+          {qtd1 > 0 && `${qtd1} moeda(s) de R$1.`}  
         </div>
 
       </div>
