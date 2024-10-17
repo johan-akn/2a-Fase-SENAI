@@ -4,6 +4,10 @@
     align-items: center;
 }
 
-.container-pares input, button{
+.container-pares button{
     margin-top: 20px;
+}
+
+.container-inpt{
+    text-align: center;
 }
