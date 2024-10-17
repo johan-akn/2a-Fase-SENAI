@@ -1,0 +1,14 @@
+.container-numeros{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.container-numeros button{
+    margin-top: 20px;
+}
+
+.container-numeros input{
+    outline: none;
+}
