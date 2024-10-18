@@ -7,26 +7,27 @@ function Pares() {
     const[resultado, setResultado] = useState(false)
     const[inptNumeroUm, setInptNumeroUm] = useState('')
     const[inptNumeroDois, setInptNumeroDois] = useState('')
-    const[cont, setCont] = useState(0)
+    const[listaPares, setListaPares] = useState('')
+
+    let maiorNum, menorNum
+    let numUm, numDois
 
     function LerPares(){
-      let maiorNum = 0, menorNum = 0
-      let numUm = Number(inptNumeroUm), numDois = Number(inptNumeroDois)
-      let numeroSobra
+      
+      numUm = Number(inptNumeroUm)
+      numDois = Number(inptNumeroDois)
+      maiorNum = Math.max(numUm, numDois)
+      menorNum = Math.min(numUm, numDois)
 
-      if(numUm > maiorNum){
-        maiorNum = numUm
-      }else if(numDois > maiorNum){
-        maiorNum = numDois
+      let pares = []
+      let i
+
+      for(i = menorNum + 1; i < maiorNum; i++){
+        if(i % 2 == 0){
+          pares.push(` ${i}`)
+        }
       }
-
-      if(numUm < menorNum){
-        menorNum = numUm
-      }else if(numDois < menorNum){
-        menorNum = numDois
-      }
-
-      numeroSobra = maiorNum - menorNum
+      setListaPares(pares)
     }
 
   return (
@@ -52,7 +53,7 @@ function Pares() {
             <button onClick={LerPares}>Ler</button>
             <button onClick={ () => setResultado(true) }>RESULTADO</button>
 
-            {resultado && <p>z</p>}
+            {resultado && <p>Números pares entre o menor e o maior número: {listaPares}</p>}
         </div>
     </div>
   )
