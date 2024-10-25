@@ -1,0 +1,63 @@
+.cadastro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro-container h1{
+    font-size: 34px;
+}
+.cadastro-container p{
+    font-size: 20px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.input-container label{
+    font-size: 20px;
+}
+
+.input-container input{
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 24px;
+    width: 240px;
+}
+
+.cadastro-container button{
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    border: none;
+    height: 45px;
+    width: 190px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.contatinhos{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card-contatinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F9F9F9;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 300px;
+    width: 200px;
+}
+
+.card-contatinho p{
+    font-size: 24px;
+}

@@ -1,0 +1,10 @@
+:root {
+  color: #213547;
+  background-color: #619fda;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body, #root{
+  box-sizing: border-box;
+  margin: 0;
+}
